@@ -1,3 +1,7 @@
-#imageGrandeTaille{
-  width: 1000px;
+.image-carree-reduite {
+  width: 400px;
+}
+/* Ca ne fonctionne pas ?? */
+.image-paysage-reduite {
+  width: 550;
 }
