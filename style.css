@@ -1,7 +1,17 @@
 .image-carree-reduite {
   width: 400px;
 }
-/* Ca ne fonctionne pas ?? */
 .image-paysage-reduite {
-  width: 550;
+  width: 550px;
 }
+.image-bandeau{
+  width: 1000px;
+}
+a{
+  color: black;
+}
+#logo{
+  width: 50px;
+}
+
+/* Comment cibler une balise à l'intérieur d'une autre ? */
