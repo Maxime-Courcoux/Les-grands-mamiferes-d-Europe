@@ -1,17 +1,73 @@
+/* Comment cibler une balise à l'intérieur d'une autre ? */
+/* Revoir la couleur des <em> dans à_propos.html */
+/* background-color:#eeeee9 ; à confirmer */
+
+/* --------------Texte----------------- */
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+ background-color:#eeeee9 ;
+}
+h1{
+  font-size: 2.2em;
+  text-align: center;
+}
+.h1headerPageAnimaux{
+  font-size: 4em;
+  font-weight: 500;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+h2{
+  font-size:x-large;
+  font-weight: 900;
+  color: #815a2d ;
+}
+p{
+  font-size: 1.1em;
+}
+/* a reprendre ici /////////////////////// */
+/* li{
+
+  font-family: ;
+} */
+.motClés{
+  color: #A5B4FC;
+}
+.rowdies-light {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.rowdies-regular {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.rowdies-bold {
+  font-family: "Rowdies", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+a{
+  color: black;
+}
+
+/* --------------Images----------------- */
 .image-carree-reduite {
   width: 400px;
 }
 .image-paysage-reduite {
   width: 550px;
 }
+.image-portrait-reduite{
+height: 600px;
+}
 .image-bandeau{
   width: 1000px;
-}
-a{
-  color: black;
 }
 #logo{
   width: 50px;
 }
 
-/* Comment cibler une balise à l'intérieur d'une autre ? */
+
