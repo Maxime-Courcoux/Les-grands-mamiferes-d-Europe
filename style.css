@@ -5,35 +5,59 @@
 
 /* --------------Texte----------------- */
 
-*{
+* {
   font-family: Arial, Helvetica, sans-serif;
- background-color:#eeeee9 ;
 }
-h1{
+body {
+  background-color: rgba(238, 238, 233, 1);
+  font-family: sans-serif;
+  margin: 0;
+}
+.banniere {
+  padding: 100px;
+  background-image: url("pictures/montagne_baniere.jpg");
+  background-size: cover;
+}
+.liens-header {
+  background-color: rgba(129, 90, 45, 0.6);
+}
+h1 {
   font-size: 2.2em;
   text-align: center;
 }
-.h1headerPageAnimaux{
+.h1headerPageAnimaux {
   font-size: 4em;
   font-weight: 500;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   text-align: center;
 }
-h2{
-  font-size:x-large;
+h2 {
+  font-size: x-large;
   font-weight: 900;
-  color: #815a2d ;
+  color: #815a2d;
 }
-p{
+p {
   font-size: 1.1em;
 }
-/* a reprendre ici /////////////////////// */
-/* li{
+.link-styled {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 0.9em;
 
-  font-family: ;
-} */
-.motClés{
-  color: #A5B4FC;
+  background: #ff8008; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffc837,
+    #ff8008
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffc837,
+    #ff8008
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.motClés {
+  color: #815a2d;
 }
 .rowdies-light {
   font-family: "Rowdies", sans-serif;
@@ -50,7 +74,7 @@ p{
   font-weight: 700;
   font-style: normal;
 }
-a{
+a {
   color: black;
 }
 
@@ -61,14 +85,12 @@ a{
 .image-paysage-reduite {
   width: 550px;
 }
-.image-portrait-reduite{
-height: 600px;
+.image-portrait-reduite {
+  height: 600px;
 }
-.image-bandeau{
+.image-bandeau {
   width: 1000px;
 }
-#logo{
+#logo {
   width: 50px;
 }
-
-
