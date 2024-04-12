@@ -5,18 +5,29 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.banniere {
-  padding: 100px;
+/* -----------------------------BLOCK------------------------- */
+h1 {
   background-image: url("pictures/montagne_baniere.jpg");
   background-size: cover;
+  padding: 100px;
+
+  font-size: 2.5em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
 }
 
-/* -----------------------------BLOCK------------------------- */
 header {
+  margin: 20px 50px 20px 50px;
   background-color: rgba(175, 145, 111, 0.6);
 }
 
+footer {
+  margin: 20px 50px 20px 50px;
+}
+
 .p_main {
+  font-size: 1.2em;
   width: 500px;
   background-color: rgba(212, 198, 183, 0.6);
   padding: 16px;
@@ -41,29 +52,17 @@ header {
   font-style: normal;
 }
 
-h1 {
-  /*A mettre dans la bannière*/
-  font-size: 4em;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-align: center;
-}
-
 h2 {
   font-size: x-large;
   font-weight: 900;
   color: #815a2d;
 }
 
-p {
-  font-size: 1.1em;
-}
-
-strong {
+strong,
+em {
   font-weight: 700;
   color: #815a2d;
 }
-
 
 /* -----------------------------LIEN------------------------- */
 a {
@@ -79,7 +78,14 @@ a:active {
   color: #815a2d;
 }
 
+.shadow_link {
+  font-weight: 700;
+  box-shadow: 11.5px 8.3px 7.3px rgba(0, 0, 0, 0.1),
+    92px 66px 58px rgba(0, 0, 0, 0.05);
+}
+
 .link-styled {
+  /*livre blanc et fond d'écran*/
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 0.9em;
 
@@ -96,132 +102,22 @@ a:active {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.shadow_link {
-  font-weight: 700;
-  box-shadow: 11.5px 8.3px 7.3px rgba(0, 0, 0, 0.1),
-    92px 66px 58px rgba(0, 0, 0, 0.05);
-}
-
-
 /* --------------Images----------------- */
-/* A modifier  */
-.banner_img {
-  width: 1000px;
-}
-
-#logo {
-  width: 50px;
-  border-radius: 30px;
-}
-
-
-
-
-
-
-/* //////////////////////////////////////////////////// */
-
-
-
-.liens-header {
-  background-color: rgba(129, 90, 45, 0.6);
-}
-
-h1 {
-  /* font-style: ; */
-  font-size: 2.2em;
-  text-align: center;
-}
-
-.block_link_header {
-  border: 2px #815a2d solid;
-}
-
-h2 {
-  font-size: x-large;
-  font-weight: 900;
-  color: #815a2d;
-}
-
-p {
-  font-size: 1.1em;
-}
-
-a {
-  color: black;
-}
-
-a:hover {
-  font-size: 1.01em;
-  opacity: 0.8;
-}
-
-a:active {
-  color: #815a2d;
-}
-
-.link-styled {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 0.9em;
-
-  background: #ff8008; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ffc837,
-    #ff8008
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ffc837,
-    #ff8008
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-strong {
-  color: #815a2d;
-}
-
-.shadow_link {
-  font-weight: 700;
-  box-shadow: 11.5px 8.3px 7.3px rgba(0, 0, 0, 0.1),
-    92px 66px 58px rgba(0, 0, 0, 0.05);
-}
-
-.rowdies-light {
-  font-family: "Rowdies", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-.rowdies-regular {
-  font-family: "Rowdies", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.rowdies-bold {
-  font-family: "Rowdies", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* --------------Images----------------- */
-/* img {
-  border-radius: 10px;
-} */
 .image-carree-reduite {
   width: 400px;
   border-radius: 10px;
 }
+
 .image-paysage-reduite {
   width: 550px;
   border-radius: 10px;
 }
+
 .image-portrait-reduite {
   height: 600px;
   border-radius: 10px;
 }
-.image-bandeau {
-  width: 1000px;
-}
+
 #logo {
   width: 50px;
   border-radius: 30px;
