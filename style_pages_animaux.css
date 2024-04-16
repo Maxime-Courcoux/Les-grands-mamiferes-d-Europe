@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
 }
 
@@ -17,33 +17,34 @@ h1 {
   text-align: center;
   /* Banner */
   background-size: cover;
-  padding: 100px;
 }
 
 #h1_bison {
   background-image: url("pictures/pictures_bisons/troupeau_de_bisons_baniere.jpg");
+  padding: 25px 100px 175px 100px;
 }
 
 #h1_loup {
   background-image: url("pictures/pictures_loups/loup_baniere.jpg");
+  font-size: 3.7em;
+  color: azure;
+  padding: 25px 5px 175px 195px;
+  text-align: end;
 }
 
 #h1_ours {
   background-image: url("pictures/pictures_ours/ours_baniere.jpg");
+  padding: 15px 100px 185px 100px;
 }
 
 header {
-  margin: 20px 50px 20px 50px;
+  margin-top: 8px;
+  margin-bottom: 8px;
   background-color: rgba(175, 145, 111, 0.6);
 }
 
-footer{
+footer {
   margin: 20px 50px 20px 50px;
-}
-
-p {
-  font-size: 1.1em;
-  /* à compléter comme block */
 }
 
 /* -----------------------------TEXT------------------------- */
@@ -69,7 +70,12 @@ h2 {
   color: #815a2d;
 }
 
-strong, em {
+p {
+  font-size: 1.1em;
+}
+
+strong,
+em {
   font-weight: 700;
   color: #815a2d;
 }
@@ -95,7 +101,8 @@ a:active {
     92px 66px 58px rgba(0, 0, 0, 0.05);
 }
 
-a[class*="no_underline"] {/*Tout les <a> qui contiennent "no_underline" dans leurs class*/
+a[class*="no_underline"] {
+  /*Tout les <a> qui contiennent "no_underline" dans leurs class*/
   text-decoration: none;
   font-weight: 600;
 }
