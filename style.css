@@ -5,7 +5,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {/*Banner*/
+h1 {
+  /*Banner*/
   background-image: url("pictures/montagne_baniere.jpg");
   background-size: cover;
   padding: 25px 100px 175px 100px;
@@ -28,19 +29,51 @@ h2 {
   margin: 20px;
 }
 
-.liens_header{
+.h2_black {
+  color: black;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: x-large;
+  margin-top: 60px;
+}
+
+.lien_partenaire{
+ margin: 7px;
+}
+
+.p_aside {
+  font-size: 1.2em;
+}
+
+.liens_header {
   padding: 10px 10px 10px 10px;
   display: flex;
-  justify-content:space-around ;
+  justify-content: space-around;
   align-items: center;
+}
+
+.main_a_propos {
+  width: 70%;
+  margin: 10px;
+}
+
+.box_main_div_a_propos {
+  display: flex;
+}
+
+aside {
+  border: 1px rgba(175, 145, 111, 0.6) solid;
+  border-radius: 8px;
+  margin-top: 30px;
+  padding: 15px;
 }
 
 footer {
   padding: 10px 10px 10px 10px;
   /* background-color: #ff8008; */
 }
-
-
 
 /* -----------------------------TEXT------------------------- */
 .rowdies-light {
@@ -59,17 +92,16 @@ footer {
   font-style: normal;
 }
 
-.phrase_a_propos{
- margin: 20px; 
-}
+/* .phrase_a_propos {
+  margin: 20px;
+} */
 
 .p_main {
   font-size: 1.2em;
-  width: 500px;
   background-color: rgba(212, 198, 183, 0.6);
   padding: 16px;
-  margin: 20px;
   border-radius: 7px;
+  margin-bottom: 65px;
 }
 
 strong,
@@ -132,8 +164,14 @@ a:active {
   border-radius: 10px;
 }
 
-.image_index, .image_a_propos{
+.intro_a_propos {
+  display: flex;
+}
+
+.image_index,
+.image_a_propos {
   margin: 20px;
+  justify-content: center;
 }
 
 #logo {

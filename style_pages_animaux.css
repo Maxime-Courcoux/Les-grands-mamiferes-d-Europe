@@ -38,9 +38,13 @@ h1 {
 }
 
 header {
-  margin-top: 8px;
-  margin-bottom: 8px;
   background-color: rgba(175, 145, 111, 0.6);
+  height: 120px;
+  margin-bottom: 8px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 footer {
@@ -78,6 +82,11 @@ strong,
 em {
   font-weight: 700;
   color: #815a2d;
+}
+
+.h2_black{
+  color: black;
+  margin-bottom: 5px;
 }
 
 /* -----------------------------LIEN------------------------- */
