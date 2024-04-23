@@ -1,44 +1,64 @@
-p {
+/* p {
   background-color: #f1c864;
   padding: 15px 5px 15px 5px;
-  /* margin: 15px 5px 15px 5px; */
+  margin: 15px 5px 15px 5px;
   border-radius: 15px;
   width: 50%;
   margin: auto;
-}
+} */
 
 .container {
   background-color: #f1c864;
-  padding: 5px;
   width: 920px;
   height: 850px;
+  position: relative;
   display: flex;
-  /* justify-content:flex-end ; */
-  /* align-items: center; */
-  /* flex-direction: column; */
-
-  flex-flow: row wrap;
-  align-content: stretch;
+  flex-direction: column;
+  justify-content: space-around;
 }
-
-.el1 {
-  /* align-self: flex-end; */
-  /* order: 1; */
-}
-
-.el3 {
-  /* order: -1; */
-  align-self: flex-end;
+.parent_pour_el2 {
+  background-color: aliceblue;
+  width: 300px;
+  height: 300px;
+  /* position: relative;
+  left: 200px; */
 }
 
 .el {
   background-color: antiquewhite;
-  width: 150px;
+  width: 120px;
   height: 50px;
   font-weight: 800;
   font-family: sans-serif;
-  text-align: center;
-  border: black 2px solid;
-  padding: 12px;
-  margin: 5px;
+  text-align: end;
+  /* border: black 2px solid; */
+}
+
+.el1 {
+  /*width: 120px; et height: 50px sont maintenant écrasé*/
+  background-color: blue;
+  width: 300px;
+  height: 400px;
+}
+
+.el2 {
+  /*width: 120px; et height: 50px sont maintenant écrasé*/
+  background-color: white;
+  width: 250px;
+  height: 320px;
+  position: relative;
+}
+.el3 {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  /* top: 0px; */
+}
+.el4 {
+  background-color: black;
+  position: absolute;
+  top: 100%;
+  /* position: absolute; */
+  /* top: 5px; */
 }
