@@ -3,48 +3,90 @@
 }
 
 body {
-  width: 50%;
+  width: 1100px;
   margin: auto;
   background-color: rgba(238, 238, 233, 1);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 /* -----------------------------BLOCK------------------------- */
-h1 {
+
+/* Banner */
+/* h1 {  
   font-size: 4em;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   text-align: center;
-  /* Banner */
   background-size: cover;
+} */
+
+.banniere_bison {
+  /* width: 100%; */
+  background-image: url("pictures/pictures_bisons/troupeau_de_bisons_baniere.jpg");
+  background-size: cover; /* Pour que l'image couvre toute la bannière */
+  background-position: center; /* Pour centrer l'image horizontalement */
+  color: black;
+  padding: 130px 0;
+  position: relative;
 }
 
 #h1_bison {
-  background-image: url("pictures/pictures_bisons/troupeau_de_bisons_baniere.jpg");
-  padding: 25px 100px 175px 100px;
+  font-size: 4em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+}
+
+.banniere_loup {
+  /* width: 100%; */
+  background-image: url("pictures/pictures_loups/loup_baniere.jpg");
+  background-size: cover;
+  background-position: center;
+  color: rgba(238, 238, 233, 1);
+  padding: 130px 0;
+  position: relative;
 }
 
 #h1_loup {
-  background-image: url("pictures/pictures_loups/loup_baniere.jpg");
-  font-size: 3.7em;
-  color: azure;
-  padding: 25px 5px 175px 195px;
-  text-align: end;
+  font-size: 3.2em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  position: absolute;
+  top: 10%;
+  right: 3%;
+}
+
+.banniere_ours {
+  /* width: 100%; */
+  background-image: url("pictures/pictures_ours/ours_baniere.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  position: relative;
 }
 
 #h1_ours {
-  background-image: url("pictures/pictures_ours/ours_baniere.jpg");
-  padding: 15px 100px 185px 100px;
+  font-size: 3em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  position: absolute;
+  top: 2%;
+  left: 23%;
 }
 
 header {
-  background-color: rgba(175, 145, 111, 0.6);
+  /*idem color du body*/
+  background-color: rgba(238, 238, 233, 1);
   height: 120px;
   margin-bottom: 8px;
   padding: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: sticky;
+  top: 0px;
 }
 
 .p_main {
@@ -80,6 +122,7 @@ h2 {
 
 p {
   font-size: 1.1em;
+  margin-top: 10px;
 }
 
 strong,
@@ -88,7 +131,7 @@ em {
   color: #815a2d;
 }
 
-.h2_black{
+.h2_black {
   color: black;
   margin-bottom: 5px;
 }

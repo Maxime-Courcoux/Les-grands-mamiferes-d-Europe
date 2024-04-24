@@ -1,36 +1,49 @@
+* {
+  margin: 0;
+}
+
 body {
-  width: 50%;
+  width: 1100px;
   margin: auto;
   background-color: rgba(238, 238, 233, 1);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-  /*Banner*/
+.banniere {
+    /* width: 100%; */
   background-image: url("pictures/montagne_baniere.jpg");
-  background-size: cover;
-  padding: 25px 100px 175px 100px;
-  margin: 0;
-  font-size: 2.5em;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  text-align: center;
+  background-size: cover; /* Pour que l'image couvre toute la bannière */
+  background-position: center;  /* Pour centrer l'image horizontalement */
+    /* text-align: center; */
+  color: rgba(238, 238, 233, 1);
+  padding: 100px 0;
+  position: relative; /*Pour que les positions absolues soient relatives à la bannière */
+  margin-bottom: 15px;
+}
+
+.banniere h1 {
+  position: absolute;
+  font-size: 2em;
+  top: 75%;
+  left: 25%;
 }
 
 header {
-  background-color: rgba(175, 145, 111, 0.6);
   padding: 0px;
 }
 
-h2 {
+.h3_sommaire_a_propo {
+  font-size: 2.4em;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: 2em;
   font-weight: 900;
   color: #815a2d;
   margin: 20px;
-}
-
-.h2_black {
-  color: black;
-  margin-bottom: 5px;
 }
 
 .h2_index {
@@ -46,11 +59,15 @@ h2 {
   margin-bottom: 60px;
 }
 
-.liens_header {
+header {
+  /*idem color du body car sorti du flux html*/
+  background-color: rgba(238, 238, 233, 1);
   padding: 10px 10px 10px 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: sticky;
+  top: 0px;
 }
 
 .main_a_propos {
@@ -58,7 +75,7 @@ h2 {
   margin: 10px;
 }
 
-.box_main_div_a_propos {
+.box_main_et_aside_a_propos {
   display: flex;
 }
 
@@ -73,7 +90,7 @@ aside {
   /*---------CONTAINER GALERIE--------------- */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 2fr 2fr 2fr ;
+  grid-template-rows: 1fr 2fr 2fr 2fr;
   gap: 18px;
 }
 .h3_galerie_photo {
@@ -90,14 +107,11 @@ aside {
   object-fit: cover; /* Ajuste la taille de l'image pour couvrir son conteneur */
   display: block; /*Assurez-vous que les images sont affichées en tant que blocs*/
 }
-.item_1_galerie{
-  
-}
+
 /*---------------------------------------------*/
 
 footer {
   padding: 10px 10px 10px 10px;
-  /* background-color: #ff8008; */
 }
 
 /* -----------------------------TEXT------------------------- */
@@ -108,7 +122,7 @@ footer {
 }
 .rowdies-regular {
   font-family: "Rowdies", sans-serif;
-  font-weight: 400;
+  font-weight: 50;
   font-style: normal;
 }
 .rodies-bolwd {
@@ -120,6 +134,10 @@ footer {
 /* .phrase_a_propos {
   margin: 20px;
 } */
+
+p {
+  margin-top: 10px;
+}
 
 .p_main {
   font-size: 1.2em;
