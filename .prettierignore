@@ -1,0 +1,2 @@
+# Je désactive prettier des fichiers css afin de pouvoir faire du mono ligne
+*.css

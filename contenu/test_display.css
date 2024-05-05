@@ -1,4 +1,4 @@
-* {
+/* * {
   font-family: Arial;
 }
 
@@ -35,4 +35,19 @@ h1 {
   background-color: #CBFCB9;
   top: 0;
   left: 0;
+} */
+
+/* <!-- ---------------------------------------------------------------- -->*/
+
+.card {
+  display: flex;
+  max-width: 700px;
+  align-items: center;
+  border: 1px solid #666;
+  padding: 1rem;
 }
+  .card__img { margin-right: 1rem; }
+  .card__title { font-size: 2rem; }
+  .card__item { color: green; }
+  .card__item--active { color: red; }
+  
