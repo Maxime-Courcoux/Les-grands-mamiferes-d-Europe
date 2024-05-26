@@ -1,0 +1,98 @@
+*, ::before, ::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  width: 70rem;
+  margin: auto;
+  /*background: #BA8B02;  /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(to bottom, #181818, #BA8B02);  /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(to bottom, #181818, #BA8B02); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------------------------HEADER----------------------------------- */
+.header { /*Même color du body car sorti du flux html*/ 
+  display: flex; 
+  justify-content: space-around; 
+  padding: 10px; 
+
+  position: sticky; 
+  top: 0px; 
+  background-color: rgba(238, 238, 233, 1); 
+  border-bottom: 0.06rem solid black;
+  margin-bottom: 2rem;
+}
+  .header__logo { width: 50px; border-radius: 30px; }
+
+/* ---------------------------MAIN (Form)----------------------------------- */
+.form { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0 5rem 0;
+}
+  .form__coordonnee { 
+    display: flex; 
+    flex-direction: column;
+    height: 30rem; 
+  }
+    .form__coordonnee__el { margin-bottom: 2rem; }
+
+  .form__question { height: 20rem; }
+    .form__question__textarea { height: 12rem; width: 25rem; }
+
+    .form__souhait__el { margin-bottom: 2rem }
+
+  .form__coordonnee, .form__question, .form__souhait { 
+    background-color: rgba(238, 238, 233, 1); 
+    width: 30rem; 
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .form__coordonnee__legend, .form__question__legend, .form__souhait__legend {
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgba(212, 198, 183, 0.6); }
+
+:required { background-color: rgba(212, 198, 183, 0.6);}
+
+.form__buttonValider, .form__buttonEffacer { 
+  width: 7rem; 
+  padding: 0.5rem; 
+  border-radius: 0.5rem; 
+  background-color: #48ff378e; 
+  margin-top: 1rem;
+}
+    .form__buttonValider:hover, .form__buttonEffacer:hover { opacity: 70%; }
+.form__buttonEffacer { background-color: rgba(241, 41, 41, 0.575); font-weight: 900; }
+    
+/* ----------------------------FOOTER------------------------------ */
+.footer { display: flex; flex-direction: row; justify-content: space-around; padding: 1.2rem; }
+  .footer__p { margin-bottom: 0.5rem; }
+    .footer__p__socialLogo { width: 1.2rem; margin: -0.2rem 0.5rem; }
+    .footer__p__styledLink {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 0.85rem;
+
+      background: #ff8008; /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #ffc837, #ff8008); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #ffc837, #ff8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      padding: 0.1rem 0.3rem;  
+      border-radius: 0.4rem;
+    }
+
+
+/* -----------------------------Other Links------------------------- */
+a { color: black;}
+a:hover {  opacity: 0.8; }
+a:active { color: #815a2d; }
+
+/*Tout les <a> qui contiennent "no_underline" dans leurs class*/
+a[class*="no_underline"] { text-decoration: none; font-weight: 600; }
+
+.header__link, .footer__link {
+  font-weight: 700;
+  box-shadow: 11.5px 8.3px 7.3px rgba(0, 0, 0, 0.1), 92px 66px 58px rgba(0, 0, 0, 0.05);
+  color: black;
+}

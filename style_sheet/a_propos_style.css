@@ -1,0 +1,124 @@
+*, ::before, ::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  width: 70rem;
+  margin: auto;
+  background-color: rgba(238, 238, 233, 1);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -----------------------------BANNER------------------------- */
+.banner {
+  /* width: 100%; */
+  background-image: url("../pictures/montagne_baniere.jpg");
+  background-size: cover; /* Pour que l'image couvre toute la bannière */
+  background-position: center; /* Pour centrer l'image horizontalement */
+  /* text-align: center; */
+  color: rgba(238, 238, 233, 1);
+  padding: 6.25rem 0;
+  position: relative; /*Pour que les positions absolues soient relatives à la bannière */
+  margin-bottom: 1rem;
+}
+  .banner__h1 {
+    position: absolute; 
+    font-size: 2em; 
+    top: 75%; left: 25%; 
+    font-family: "Rowdies", sans-serif;
+    font-weight: 450;
+  }
+
+/* -----------------------------HEADER----------------------------------- */
+.header { /*Même color du body car sorti du flux html*/ 
+  background-color: rgba(238, 238, 233, 1);
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  border-bottom: 0.06rem solid black;
+  margin-bottom: 2rem;
+}
+  .header__h2 { font-size: 2.4em; font-weight: 600; color: black; }
+  /* .header__nav { display: block ;}  */
+    .header__nav__a { 
+      display: inline-block; 
+      margin-bottom: 0.5rem; 
+      color: black; 
+      text-decoration: none; 
+      font-weight: 550;
+    }
+
+  .header__logo { width: 50px; border-radius: 30px; }
+
+/* ----------------------------MAIN + ASIDE------------------------------ */
+.blockMainAside { display: flex; margin: 1rem 0 1rem 0;}/* blocks main + aside */
+
+/* ---------------------------------MAIN---------------------------------- */
+.main { width: 70%; margin-right: 0.5rem; }
+
+  .main__blockHead { display: flex; }
+    .main__blockHead__p { margin-right: 1rem; }
+    .main__blockHead__imgLandscape { width: 31rem; }
+
+  .main__h3 { font-size: 2em; font-weight: 900; color: #815a2d; margin: 1.2rem; }
+  .main__divP {
+    font-size: 1.2em;
+    background-color: rgba(212, 198, 183, 0.6);
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+    .main__divP__p  { line-height: 1.4rem; margin-bottom: 1rem; }
+
+/* ----------------------------ASIDE------------------------------ */
+.bio { 
+  border: 1px rgba(175, 145, 111, 0.6) solid; border-radius: 0.5rem;
+  background-color: rgba(221, 214, 207, 0.6); 
+  border-radius: 0.5rem; 
+  padding: 1rem; 
+  margin-bottom: 2rem;
+}
+  .bio__h3 { font-size: 1.7rem; margin-bottom: 0.8rem; }
+  .bio__p { font-size: 1.2rem ; margin-bottom: 0.5rem; }
+
+.partners { margin: 1rem; margin-bottom: 2rem;}
+  .partners__h3 { font-size: 1.7rem; margin-bottom: 0.8rem; }
+  .partners__nav { margin-left: 1rem; }
+    .partners__nav__link { margin-bottom: 1rem; color: black}
+
+/* ----------------------------FOOTER------------------------------ */
+.footer { display: flex; flex-direction: row; justify-content: space-around; padding: 1.2rem; }
+  .footer__a { /*copie du header*/
+    display: block; 
+    margin-bottom: 0.5rem; 
+    color: black; 
+    text-decoration: none; 
+    font-weight: 550;
+  }
+ 
+  .footer__p { margin-bottom: 0.5rem; }
+    .footer__p__socialLogo { width: 1.2rem; margin: -0.2rem 0.5rem; }
+    .footer__p__styledLink {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 0.85rem;
+      color: black;
+      background: #ff8008; /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #ffc837, #ff8008); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #ffc837, #ff8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      padding: 0.1rem 0.3rem;  
+      border-radius: 0.4rem;
+    }
+    
+/* -----------------------------Other Text------------------------------- */
+/* fonts.googleapis.com ==> Rowdies   */
+.rowdies-light { font-family: "Rowdies", sans-serif; font-weight: 300; font-style: normal; }
+.rowdies-regular { font-family: "Rowdies", sans-serif; font-weight: 400; font-style: normal; }
+.rodies-bolwd { font-family: "Rowdies", sans-serif; font-weight: 700; font-style: normal; }
+
+strong, em { font-weight: 700; color: #815a2d; }
+
+/* -----------------------------Other Links------------------------------- */
+a:hover { opacity: 0.8; text-decoration: underline; }
+a:active { color: #815a2d; }
+
+/*Tout les <a> qui contiennent "no_underline" dans leurs class*/
+a[class*="no_underline"] { text-decoration: none; font-weight: 600; }

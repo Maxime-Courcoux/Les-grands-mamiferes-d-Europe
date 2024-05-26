@@ -1,0 +1,127 @@
+*, ::before, ::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  width: 1100px;
+  margin: auto;
+  background-color: rgba(238, 238, 233, 1);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -----------------------------BANNER------------------------- */
+.banner {
+  /* width: 100%; */
+  background-image: url("pictures/montagne_baniere.jpg");
+  background-size: cover; /* Pour que l'image couvre toute la bannière */
+  background-position: center; /* Pour centrer l'image horizontalement */
+  /* text-align: center; */
+  color: rgba(238, 238, 233, 1);
+  padding: 100px 0;
+  position: relative; /*Pour que les positions absolues soient relatives à la bannière */
+  margin-bottom: 15px;
+}
+  .banner__h1 {
+    position: absolute; 
+    font-size: 2.2rem; 
+    top: 75%; left: 25%; 
+    font-family: "Rowdies", sans-serif;
+    font-weight: 450;
+}
+
+/* ---------------------------HEADER----------------------------------- */
+.header { /*Même color du body car sorti du flux html*/ 
+  display: flex; 
+  justify-content: space-around; 
+  padding: 10px; 
+
+  position: sticky; 
+  top: 0px; 
+  background-color: rgba(238, 238, 233, 1); 
+  border-bottom: 0.06rem solid black;
+  margin-bottom: 2rem;
+}
+  .header__logo { width: 50px; border-radius: 30px; }
+
+/* ----------------------------------MAIN------------------------------ */
+.article__head { display: flex; flex-direction: column; align-items: center; }
+  .acticle__head__tittle { font-size: 2.5rem; }
+  .article__head__imgLandscape {
+    width: 550px;
+    border-radius: 10px;
+    margin: 20px;
+    justify-content: center;
+  }
+
+.article__body {
+  font-size: 1.2rem;
+  background-color: rgba(221, 214, 207, 0.6);
+  padding: 16px;
+  border-radius: 7px;
+  margin-bottom: 3rem;
+}
+
+  .article__body__p { margin-bottom: 10px; }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 2fr 2fr 2fr;
+  gap: 18px;
+
+  border: 1px rgba(175, 145, 111, 0.6) solid;
+  border-radius: 8px;
+
+  margin-top: 30px;
+  padding: 15px;
+}
+  .gellery__h3 { grid-column: 1 / -1; text-align: center; font-size: 2.5rem; }
+  .gallery__img {
+  margin: auto;
+  max-width: 100%; /*Assurez-vous que les images ne dépassent pas la largeur de leur conteneur*/
+  height: auto; /* Garantit que les images gardent leurs proportions */
+  object-fit: cover; /* Ajuste la taille de l'image pour couvrir son conteneur */
+  display: block; /*Assurez-vous que les images sont affichées en tant que blocs*/
+  }
+
+.events { margin: 3rem 0.2rem 3rem 0.2rem;}
+  .events__h3 { font-size: 2.5rem; margin-bottom: 0.8rem; text-align: center;}
+  .events__tab { border-collapse: collapse; margin: auto;}
+    .events__tab th, .events__tab td { border: black solid 1px; padding: 1rem; }
+    .events__tab caption { text-decoration: underline; margin-bottom: 1rem; }
+    .events__tab th { background-color: rgba(212, 198, 183, 0.6); }
+ 
+/* ----------------------------FOOTER------------------------------ */
+.footer { display: flex; flex-direction: row; justify-content: space-around; padding: 1.2rem; }
+  .footer__p { margin-bottom: 0.5rem; }
+    .footer__p__socialLogo { width: 1.2rem; margin: -0.2rem 0.5rem; }
+    .footer__p__styledLink {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 0.85rem;
+
+      background: #ff8008; /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #ffc837, #ff8008); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #ffc837, #ff8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      padding: 0.1rem 0.3rem;  
+      border-radius: 0.4rem;
+    }
+
+/* ---------------------------------Other Text----------------------------- */
+/* fonts.googleapis.com ==> Rowdies   */
+.rowdies-light { font-family: "Rowdies", sans-serif; font-weight: 300; font-style: normal; }
+.rowdies-regular { font-family: "Rowdies", sans-serif; font-weight: 400; font-style: normal; }
+.rodies-bolwd { font-family: "Rowdies", sans-serif; font-weight: 700; font-style: normal; }
+
+strong, em { font-weight: 700; color: #5a3b18; }
+
+/* -----------------------------Other Links------------------------- */
+a { color: black;}
+a:hover {  opacity: 0.8; }
+a:active { color: #815a2d; }
+
+/*Tout les <a> qui contiennent "no_underline" dans leurs class*/
+a[class*="no_underline"] { text-decoration: none; font-weight: 600; }
+
+.header__link, .footer__link {
+  font-weight: 700;
+  box-shadow: 11.5px 8.3px 7.3px rgba(0, 0, 0, 0.1), 92px 66px 58px rgba(0, 0, 0, 0.05);
+  color: black;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire de contact</title>
+  <link rel="stylesheet" href="../style_sheet/formulaire_contact.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav>
+      <ul>
+        <li><a href="contenu/bison.html" class="header__link">Le Bison d'Europe</a></li>
+        <li><a href="contenu/loup.html" class="header__link">Le Loup d'Europe</a></li>
+        <li><a href="contenu/ours.html" class="header__link">L'Ours d'Europe</a></li>
+        <li><a href="contenu/a_propos.html" class="header__link">A propos de Nous</a></li>
+        <li><a href="../index.html" class="header__link">Retour à l'Index</a></li>
+      </ul>
+    </nav>
+    <p>Visitez la page <a href="https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Mammif%C3%A8re_d%27Europe" target="_blank"
+        class="header__link">wikipédia</a> des mamifères d'Europe.</p>
+    <a href="index.html"><img src="../pictures/logo.png" class="header__logo"></a>
+  </header>
+
+  <main>
+    <form class="form" method="get" action="">
+
+      <fieldset class="form__coordonnee">
+        <legend class="form__coordonnee__legend">Vos coordonnées</legend>
+        <label for="name">Votre nom *</label>
+        <input type="text " name="name" id="name" size="30rem" maxlength="20" placeholder="Ex: Dupond" class="form__coordonnee__el" autofocus required>
+
+        <label for="first_name">Votre prénom *</label>
+        <input type="text" name="first_name" id="first_name" size="30rem" maxlength="20" placeholder="Ex: Mathieu" class="form__coordonnee__el" required>
+
+        <label for="mail">Votre email *</label>
+        <input type="email" name="mail" id="mail" placeholder="Ex: mathieu.dupond@mail.com" class="form__coordonnee__el" required>
+
+        <label for="phone">Votre numéro de téléphone</label>
+        <input type="tel" name="phone" id="phone" class="form__coordonnee__el">
+
+        <p>
+          <label for="pays">Dans quel zone géographique habitez-vous ?</label>
+          <select name="pays" id="pays" class="form__coordonnee__el">
+        </p>
+        <option value="europe">Europe</option>
+        <option value="usa">USA</option>
+        <option value="asie">Asie</option>
+        <option value="autre">Autre</option>
+        </select>
+
+        <p >Veuillez indiquer votre tranche d'âge : <br>
+          <input type="radio" name="age" value="moins_40" id="moins_40"><label for="moins_40">Moins de 40
+            ans</label><br>
+          <input type="radio" name="age" value="40_60" id="40_60"><label for="40_60">Entre 40 et 60 ans</label><br>
+          <input type="radio" name="age" value="plus_60" id="plus_60"><label for="plus_60">Plus de 60 ans</label><br>
+        </p>
+      </fieldset>
+
+      <fieldset class="form__question">
+        <legend for="questions" class="form__question__legend">Vos questions</legend><br>
+        <textarea name="questions" id="questions"
+          placeholder="Pour modifier la taille de l'élément, utilisez la poignée en bas à droite"
+          class="form__question__textarea"></textarea>
+      </fieldset>
+
+      <fieldset class="form__souhait">
+        <legend class="form__souhait__legend">Vos souhaits :</legend> <br>
+
+        <p class="form__souhait__el">Espèce(s) qui vous intéresse : <br>
+          <input type="checkbox" name="bison" id="bison"> <label for="bison">Bison</label><br>
+          <input type="checkbox" name="Ours" id="Ours"> <label for="Ours">Ours</label><br>
+          <input type="checkbox" name="loup" id="loup"> <label for="loup">Loup</label><br>
+          <input type="checkbox" name="autre" id="autre" checked><label for="autre">Les autres petits
+            mamifères</label><br>
+        </p>
+
+
+        <label for="date_start">Période de réservation souhaitée, du :</label> <br>
+        <input type="date" name="date_start" id="date_start" min="2024-05-25">
+
+        <label for="date_end">au :</label>
+        <input type="date" name="date_end" id="date_end" min="2024-05-25"> <br>
+      </fieldset>
+
+      <input type="submit" value="Envoyer" class="form__buttonValider">
+      <input type="reset" value="Tout effacer" class="form__buttonEffacer">
+
+    </form>
+  </main>
+
+  <footer class="footer">
+    <nav>
+      <ul>
+        <li><a href="contenu/bison.html" class="footer__link">Le Bison d'Europe</a></li>
+        <li><a href="contenu/loup.html" class="footer__link">Le Loup d'Europe</a></li>
+        <li><a href="contenu/ours.html" class="footer__link">L'Ours d'Europe</a></li>
+        <li><a href="contenu/a_propos.html" class="footer__link">A propos de Nous</a></li>
+        <li><a href="../index.html" class="header__link">Retour à l'Index</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <p class="footer__p">Téléchargez notre <a href="ressources/livre_blanc.pdf" target="_blank"
+          class="footer__p__styledLink no_underline">LIVRE
+          BLANC GRATUIT</a></p>
+      <p class="footer__p">Téléchargez un <a href="ressources/montagne_fond_ecran.jpg" target="_blank"
+          class="footer__p__styledLink no_underline">FOND
+          D'ECRAN</a></p>
+    </div>
+
+    <div>
+      <p class="footer__p">
+        Contactez-nous par : <a href="mailto:NOMDUMAIL@MAIL.COM" class="footer__p__styledLink no_underline">MAIL</a> ou
+        via notre <a href="contenu/formulaire_contact.html" class="footer__p__styledLink no_underline">FORMULAIRE DE
+          CONTACT</a><br>
+      </p>
+      <p>
+        Retrouvez-nous sur nos réseaux :
+        <a href="https://www.instagram.com/" target="_blank"><img src="../pictures/instagram.png"
+            class="footer__p__socialLogo"></a>
+        <a href="https://twitter.com/?lang=fr" target="_blank"><img src="../pictures/twitter.png"
+            class="footer__p__socialLogo"></a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
